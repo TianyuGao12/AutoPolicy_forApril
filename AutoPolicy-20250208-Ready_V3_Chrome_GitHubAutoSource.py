@@ -293,6 +293,11 @@ receiver_email = ['gty_bot@163.com','tygao12@outlook.com']  # Replace with recip
 subject = 'TGAutoPolicy_新政策通知'
 body = "抓取政策出现问题，请联系并反馈" #默认为出问题，如果后面没问题会被覆盖掉
 ### 加附件 - 这里打算加总表+新内容+运行日志
+attname1 = './AttachmentTest_Only.txt'
+attname2 = './policy_monitor.log'
+attname3 = './Policy_Data_All.csv'
+attname4 = f'Policy_Data_New_{timestring}.csv'
+### 附件名字单独写，这样加附件的时候不会带上path
 attachment1 = os.path.join(script_dir,'./AttachmentTest_Only.txt') #第一个是默认附件，只是为了确认发送内容正确的，没问题之后会注释掉
 attachment2 = os.path.join(script_dir,'./policy_monitor.log')
 ### 附件1和2主要是为了debug的，3和4是政策文件
@@ -325,27 +330,27 @@ def mail():
         att1 = MIMEText(open(attachment1, 'rb').read(), 'base64', 'gb2312') #这里提前进行了二进制读取，似乎是附件上传必要的检查步骤
         att1["Content-Type"] = 'application/octet-stream'
         # 这里的filename可以任意写，写什么名字，邮件中显示什么名字
-        att1.add_header('Content-Disposition', 'attachment',filename=(f"{timestring}-{attachment1}"))
+        att1.add_header('Content-Disposition', 'attachment',filename=(f"{timestring}-{attname1}"))
         msg.attach(att1)
         """
         
         # 构造附件2
         att2 = MIMEText(open(attachment2, 'rb').read(), 'base64', 'gb2312')
         att2["Content-Type"] = 'application/octet-stream'
-        att2.add_header('Content-Disposition', 'attachment',filename=(f"{timestring}-{attachment2}"))
+        att2.add_header('Content-Disposition', 'attachment',filename=(f"{timestring}-{attname2}"))
         msg.attach(att2)
 
         if YNPolicy == True:
             # 构造附件3
             att3 = MIMEText(open(attachment3, 'rb').read(), 'base64', 'gb2312')
             att3["Content-Type"] = 'application/octet-stream'
-            att3.add_header('Content-Disposition', 'attachment',filename=(f"{timestring}-{attachment3}"))
+            att3.add_header('Content-Disposition', 'attachment',filename=(f"{timestring}-{attname3}"))
             msg.attach(att3)
 
             # 构造附件4
             att4 = MIMEText(open(attachment4, 'rb').read(), 'base64', 'gb2312')
             att4["Content-Type"] = 'application/octet-stream'
-            att4.add_header('Content-Disposition', 'attachment',filename=(f"{attachment4}"))
+            att4.add_header('Content-Disposition', 'attachment',filename=(f"{attname4}"))
             msg.attach(att4)
             ### 如果有些附件没有找到对应文件会怎么办呢？ 会报错
         
