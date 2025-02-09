@@ -10,8 +10,8 @@ on:
   schedule:
     - cron: '30 0 * * *'  # Runs at 0:30 AM UTC
     - cron: '0 9 * * *' # Runs at 9:00 AM UTC
-    - cron: '00 23 * * *' # Test only
-    - cron: '08 23 * * *' # Test only
+    - cron: '30 23 * * *' # Test only
+    - cron: '45 23 * * *' # Test only
     
 jobs:
   run-and-commit:
