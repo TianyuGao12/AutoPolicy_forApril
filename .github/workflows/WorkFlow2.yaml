@@ -1,7 +1,6 @@
 permissions:
   contents: write
 
-
 name: Run Python Script and Commit Changes
 
 on:
@@ -32,6 +31,11 @@ jobs:
 
       - name: Run Python script
         run: python AutoPolicy-20250208-Ready_V3_Chrome_GitHubAutoSource.py
+
+      - name: Fetch and merge remote changes
+        run: |
+          git fetch origin
+          git merge origin/main
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
