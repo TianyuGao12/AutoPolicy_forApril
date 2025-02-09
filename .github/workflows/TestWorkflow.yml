@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: '30 0 * * *'  # Runs at 0:30 AM UTC
     - cron: '0 9 * * *' # Runs at 9:00 AM UTC
-    - cron: '35 9 * * *' #Test only
+    - cron: '20 21 * * *' #Test only
 
 jobs:
   build:
@@ -25,5 +25,5 @@ jobs:
 
       - name: Run Python script
         run: |
-          python "AutoPolicy-20250208-Ready_V1_ChromeBrowser.py"
+          python "AutoPolicy-20250208-Ready_V3_Chrome_GitHubAutoSource.py"
 
