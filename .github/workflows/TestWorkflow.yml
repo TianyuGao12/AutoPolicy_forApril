@@ -1,0 +1,28 @@
+name: Python Application
+
+on:
+  schedule:
+    - cron: '30 0 * * *'  # Runs at 0:30 AM UTC
+    - cron: '0 9 * * *' # Runs at 9:00 AM UTC
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Run Python script
+        run: |
+          python "AutoPolicy-20250208-Ready_V1_ChromeBrowser.py"
+
