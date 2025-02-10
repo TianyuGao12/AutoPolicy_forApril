@@ -88,3 +88,13 @@
 2025-02-10 02:01:46,621 - INFO - Driver [/home/runner/.wdm/drivers/chromedriver/linux64/132.0.6834.159/chromedriver-linux64/chromedriver] found in cache
 2025-02-10 02:01:50,941 - INFO - 未发现新政策
 2025-02-10 02:01:53,857 - INFO - 成功发送通知
+2025-02-10 09:18:37,815 - INFO - 未找到已存在政策文件，已生成空白内容csv文件
+2025-02-10 09:18:37,817 - INFO - 已创建csv更新文件: /home/runner/work/AutoPolicy_forApril/AutoPolicy_forApril/Policy_Data_New_2025-02-10_09-18.csv
+2025-02-10 09:18:37,818 - INFO - 开始政策监控...
+2025-02-10 09:18:37,818 - INFO - ====== WebDriver manager ======
+2025-02-10 09:18:37,927 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-10 09:18:37,964 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-10 09:18:37,999 - INFO - Driver [/home/runner/.wdm/drivers/chromedriver/linux64/132.0.6834.159/chromedriver-linux64/chromedriver] found in cache
+2025-02-10 09:18:44,211 - INFO - 发现6条来自中央政府网站搜索-新能源汽车的新政策
+2025-02-10 09:18:44,212 - INFO - 已从头添加 6 条新政策到 /home/runner/work/AutoPolicy_forApril/AutoPolicy_forApril/Policy_Data_New_2025-02-10_09-18.csv
+2025-02-10 09:18:49,208 - INFO - 成功发送通知
