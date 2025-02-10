@@ -80,3 +80,11 @@
 2025-02-10 01:57:04,212 - INFO - Driver [/home/runner/.wdm/drivers/chromedriver/linux64/132.0.6834.159/chromedriver-linux64/chromedriver] found in cache
 2025-02-10 01:57:08,701 - INFO - 未发现新政策
 2025-02-10 01:57:11,634 - INFO - 成功发送通知
+2025-02-10 02:01:46,383 - INFO - 已创建csv更新文件: /home/runner/work/AutoPolicy_forApril/AutoPolicy_forApril/Policy_Data_New_2025-02-10_02-01.csv
+2025-02-10 02:01:46,384 - INFO - 开始政策监控...
+2025-02-10 02:01:46,384 - INFO - ====== WebDriver manager ======
+2025-02-10 02:01:46,494 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-10 02:01:46,556 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-10 02:01:46,621 - INFO - Driver [/home/runner/.wdm/drivers/chromedriver/linux64/132.0.6834.159/chromedriver-linux64/chromedriver] found in cache
+2025-02-10 02:01:50,941 - INFO - 未发现新政策
+2025-02-10 02:01:53,857 - INFO - 成功发送通知
