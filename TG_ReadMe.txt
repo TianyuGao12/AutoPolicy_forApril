@@ -14,7 +14,8 @@ repository/
 
 再次试验定时系统：成功，但是不一定准时，应该还好
 
-2025.02.10 V5
+2025.02.10 文件版本：AutoPolicy_20250210_Ready_V5_Chrome_GitAuto_DynURL.py
+====
 把运行文件分拆成了主文件+strategy+strategies三个py, 加上Website_Config.json, 此外需要的是Monitoring_Sites.txt
 可以达成识别网址并且根据网址进行对应的关键词寻找
 
@@ -28,4 +29,4 @@ repository/
 如果要添加新的网站和关键词寻找的话，需要更改的有Monitoring_Sites.txt (添加关键词和网址)，Website_Config.json （添加网址和关键词寻找算法的映射）strategies.py （添加关键词寻找方法）
 ******
 如果要加新的邮箱的话，在主文件的邮箱部分有个列表可以改
-
+==END==
