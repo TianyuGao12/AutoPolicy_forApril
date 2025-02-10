@@ -16,6 +16,8 @@ repository/
 
 2025.02.10 文件版本：AutoPolicy_20250210_Ready_V5_Chrome_GitAuto_DynURL.py
 ====
+已经加入了aprilzyp@163.com，正式启用
+====
 把运行文件分拆成了主文件+strategy+strategies三个py, 加上Website_Config.json, 此外需要的是Monitoring_Sites.txt
 可以达成识别网址并且根据网址进行对应的关键词寻找
 
