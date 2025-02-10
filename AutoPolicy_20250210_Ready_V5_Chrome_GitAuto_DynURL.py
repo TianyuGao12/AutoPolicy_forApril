@@ -272,7 +272,9 @@ class PolicyMonitor:
 if __name__ == '__main__':
     monitor = PolicyMonitor()
     YNPolicy = monitor.run()
-
+    if YNPolicy == None:
+        logging.error("代码有错误，YNPolicy为None")
+    
 # 含时间的小输出，确认代码成功跑到最后
 print(f"运行顺利，时间：{timestring}")
 print(f"{YNPolicy}")
@@ -291,8 +293,13 @@ sender_password = 'FZR5B8GrpNhcDAyc'  ### 这里要用开启之后网易提供�
 receiver_email = ['gty_bot@163.com','tygao12@outlook.com']  # Replace with recipient's email address
 
 # Create the email content
-subject = 'TGAutoPolicy_新政策通知'
+if YNPolicy == True:
+    subject = 'TGAutoPolicy_新政策通知'
+else:
+    subject = 'TGAutoPolicy_未发现新政策'
+
 body = "抓取政策出现问题，请联系并反馈" #默认为出问题，如果后面没问题会被覆盖掉
+
 ### 加附件 - 这里打算加总表+新内容+运行日志
 attname1 = './AttachmentTest_Only.txt'
 attname2 = './policy_monitor.log'
@@ -363,7 +370,7 @@ def mail():
         server.quit()  # 关闭连接
     
     except Exception as e:
-        logging.error(f"发送通知失败: {str(e)}")
+        logging.error(f"发送邮件失败: {str(e)}")
         print(f"{str(e)}")
         ret=False
     return ret
@@ -371,7 +378,7 @@ def mail():
 ret=mail()
 if ret:
     print(f"邮件发送成功 - {timestring}")
-    logging.info(f"成功发送通知")
+    logging.info(f"成功发送邮件")
 else:
     print(f"邮件发送失败 - {timestring}")
 
