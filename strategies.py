@@ -89,6 +89,8 @@ class WwwGovCnScraper(ScraperStrategy):
         #new_policies = []
         policy = []
         data = []
+        institution_parts = institution.split('-') #把机构部分分成发布机构和关键词，对应后面0和1的选择
+
         
         for item in policy_items:
             link_element = item.find_element(By.TAG_NAME, 'a')
@@ -97,7 +99,8 @@ class WwwGovCnScraper(ScraperStrategy):
             # 'Policy Name','Issuing Agency','Release Date','Main Content','Policy Link','Scraping Time' （中英文对照，主要是ai给我的全是英文的还要一遍一遍改）
             policy = {
                 '政策名称': link_element.text.strip(),
-                '发布机构': institution,
+                '发布机构': institution_parts[0], #institution,
+                '关键词': institution_parts[1],
                 '发布时间': item.find_element(By.CSS_SELECTOR, '.date').text.strip(),
                 '主要内容': '',   # Main content is not directly available in the list 暂时只包含搜索条目标题，不涉及主要内容
                 '政策链接': link_element.get_attribute('href'),
