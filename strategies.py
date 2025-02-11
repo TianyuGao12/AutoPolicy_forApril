@@ -74,6 +74,7 @@ class TencentScraper(ScraperStrategy):
         return data
 
 class WwwGovCnScraper(ScraperStrategy):
+    # 中央政府政策搜索页 https://www.gov.cn/search/zhengce/?t=zhengce&q=&timetype=timeyy&mintime=&maxtime=&sort=score&sortType=1&searchfield=&pcodeJiguan=&childtype=&subchildtype=&tsbq=&pubtimeyear=&puborg=&pcodeYear=&pcodeNum=&filetype=&p=0&n=5&inpro=&sug_t=zhengce
     def scrape(self, institution, url):
         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
         driver.get(url)
@@ -95,8 +96,8 @@ class WwwGovCnScraper(ScraperStrategy):
         for item in policy_items:
             link_element = item.find_element(By.TAG_NAME, 'a')
             # ----This line searches for the first <a> (anchor) tag within the current item. The <a> tag typically contains the hyperlink reference (href) and the visible text of the policy. （可以查看最后面的范例来确认）
-            # '政策名称', '发布机构', '发布时间', '主要内容', '政策链接', '抓取时间'
-            # 'Policy Name','Issuing Agency','Release Date','Main Content','Policy Link','Scraping Time' （中英文对照，主要是ai给我的全是英文的还要一遍一遍改）
+            # '政策名称', '发布机构','关键词', '发布时间', '主要内容', '政策链接', '抓取时间'
+            # 'Policy Name','Issuing Agency','Key Words','Release Date','Main Content','Policy Link','Scraping Time' （中英文对照，主要是ai给我的全是英文的还要一遍一遍改）
             policy = {
                 '政策名称': link_element.text.strip(),
                 '发布机构': institution_parts[0], #institution,
@@ -118,4 +119,8 @@ class WwwGovCnScraper(ScraperStrategy):
         
         return data
 
-
+class AppMpsScraper(ScraperStrategy):
+    # 公安部搜索网站 https://app.mps.gov.cn/searchweb/search_new.jsp#
+    def scrape(self, institution, url):
+        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+        driver.get(url)
