@@ -29,6 +29,8 @@ options.add_argument('--headless')
 options.add_argument('--no-sandbox')  # Add this line
 options.add_argument('--disable-dev-shm-usage')  # Add this line
 options.add_argument('--remote-debugging-port=9222')  # Add this line
+options.add_argument("--remote-debugging-port=9230")
+
 
 # 其他import
 import csv
@@ -64,6 +66,8 @@ class NeteaseScraper(ScraperStrategy):
         driver.get(url)
         data = driver.title
         
+        driver.stop_client()
+        driver.close()
         driver.quit()
         
         return data
@@ -74,6 +78,8 @@ class TencentScraper(ScraperStrategy):
         driver.get(url)
         data = driver.title
         
+        driver.stop_client()
+        driver.close()
         driver.quit()
         
         return data
@@ -121,6 +127,8 @@ class WwwGovCnScraper(ScraperStrategy):
             #    self._add_policy(policy) #函数内将单独条目写入原有总表文档并保存
             data.append(policy)
             
+        driver.stop_client()
+        driver.close()
         driver.quit()
         
         return data
@@ -128,18 +136,6 @@ class WwwGovCnScraper(ScraperStrategy):
 #### 公安部搜索的抓取版
 # 公安部搜索网站 https://app.mps.gov.cn/searchweb/search_new.jsp#
 class MpsGovCnScraper(ScraperStrategy):
-    """
-    # 警告框处理函数
-    ### 这里定义两个函数会一起在引用中被应用吗？
-    def check_and_accept_alert(driver):
-        try:
-            alert = Alert(driver)
-            alert_text = alert.text
-            alert.accept()
-            print(f"处理了警告框，内容为: {alert_text}")
-        except NoAlertPresentException:
-            pass
-    """
 
     def scrape(self, institution, url):
         institution_parts = institution.split('-') #把机构部分分成发布机构和关键词，对应后面0和1的选择
@@ -214,9 +210,9 @@ class MpsGovCnScraper(ScraperStrategy):
         #遍历每个子元素，提取所需信息并存入字典
         
         policy = []
-        data = {}
+        data = []
     
-        for item in enumerate(policy_items):
+        for item in policy_items:
             # 提取标题
             title_element = item.find_element(By.TAG_NAME, 'h3')
             title = title_element.text
@@ -256,7 +252,7 @@ class MpsGovCnScraper(ScraperStrategy):
         #遍历每个子元素，提取所需信息并存入字典
         ### 不需要重新初始化，直接找新的policy并且并入data
 
-        for item in enumerate(policy_items):
+        for item in policy_items:
             # 提取标题
             title_element = item.find_element(By.TAG_NAME, 'h3')
             title = title_element.text
@@ -280,6 +276,8 @@ class MpsGovCnScraper(ScraperStrategy):
                 }
             data.append(policy)
 
+        driver.stop_client()
+        driver.close()
         driver.quit()
         
         return data
