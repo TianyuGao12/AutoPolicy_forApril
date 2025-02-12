@@ -154,7 +154,7 @@ class PolicyMonitor:
                 '政策名称', '发布机构', '关键词','发布时间', '主要内容', '政策链接', '抓取时间'
             ])
             ### 为确定新生成文件的情况，调试时增加了每列第一个数据，实际运行时候可以跳过
-            self.policy_df.loc[0] = ['TestCol1', 'TestCol2', 'TestCol3', 'TestCol4', 'TestCol5', 'TestCol6']
+            self.policy_df.loc[0] = ['Column 1', 'Column 2', 'Column 3', 'Column 4', 'Column 5', 'Column 6','Column 7']
             self.save_data()
 
     def save_data(self):
