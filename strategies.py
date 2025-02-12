@@ -128,6 +128,7 @@ class WwwGovCnScraper(ScraperStrategy):
 #### 公安部搜索的抓取版
 # 公安部搜索网站 https://app.mps.gov.cn/searchweb/search_new.jsp#
 class MpsGovCnScraper(ScraperStrategy):
+    """
     # 警告框处理函数
     ### 这里定义两个函数会一起在引用中被应用吗？
     def check_and_accept_alert(driver):
@@ -138,6 +139,7 @@ class MpsGovCnScraper(ScraperStrategy):
             print(f"处理了警告框，内容为: {alert_text}")
         except NoAlertPresentException:
             pass
+    """
 
     def scrape(self, institution, url):
         institution_parts = institution.split('-') #把机构部分分成发布机构和关键词，对应后面0和1的选择
@@ -149,7 +151,15 @@ class MpsGovCnScraper(ScraperStrategy):
         time.sleep(15)
 
         # 处理警告框
-        check_and_accept_alert(driver)
+        ###额外定义函数好像没法被引用，所以都写在一起了
+        #check_and_accept_alert(driver)
+        try:
+            alert = Alert(driver)
+            alert_text = alert.text
+            alert.accept()
+            print(f"处理了警告框，内容为: {alert_text}")
+        except NoAlertPresentException:
+            pass
     
         # 找到搜索框并点击
         search_box = driver.find_element(By.ID, 'fullText')
