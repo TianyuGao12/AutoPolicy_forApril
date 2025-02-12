@@ -34,10 +34,11 @@ repository/
 如果要加新的邮箱的话，在主文件的邮箱部分有个列表可以改
 ==END==
 
-2025.02.12 
+2025.02.12 文件版本：AutoPolicy_20250210_Ready_V6_Chrome_GitAuto_DynURL.py
 ====
 更新了Monitoring_Sites.txt (添加关键词和网址)，Website_Config.json （添加网址和关键词寻找算法的映射）strategies.py （添加关键词寻找方法）
 适配公安部网站的关键词查找，基于虚拟chrome的点击和列表信息提取，可能运行需要花费时间较长
+对应改正了主文件的一些算法，主要是适配了分别读多个网站的可能性
 ==END==
 
 
