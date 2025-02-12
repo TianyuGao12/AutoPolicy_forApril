@@ -140,6 +140,8 @@ class MpsGovCnScraper(ScraperStrategy):
             pass
 
     def scrape(self, institution, url):
+        institution_parts = institution.split('-') #把机构部分分成发布机构和关键词，对应后面0和1的选择
+        
         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
         driver.get(url)
 
@@ -153,8 +155,8 @@ class MpsGovCnScraper(ScraperStrategy):
         search_box = driver.find_element(By.ID, 'fullText')
         search_box.click()
 
-        # 输入“新能源汽车”
-        search_box.send_keys('新能源汽车')
+        # 输入获取的关键词部分
+        search_box.send_keys(institution_parts[1])
 
         # 找到搜索按钮并点击
         search_button = driver.find_element(By.ID, 'search')
@@ -203,7 +205,6 @@ class MpsGovCnScraper(ScraperStrategy):
         
         policy = []
         data = {}
-        institution_parts = institution.split('-') #把机构部分分成发布机构和关键词，对应后面0和1的选择
     
         for item in enumerate(policy_items):
             # 提取标题
