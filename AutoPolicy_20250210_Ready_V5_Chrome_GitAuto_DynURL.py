@@ -151,7 +151,7 @@ class PolicyMonitor:
             ### 将输出的警告信息改为写在日志里面
             logging.info(f"未找到已存在政策文件，已生成空白内容csv文件")
             self.policy_df = pd.DataFrame(columns=[
-                '政策名称', '发布机构', '发布时间', '主要内容', '政策链接', '抓取时间'
+                '政策名称', '发布机构', '关键词','发布时间', '主要内容', '政策链接', '抓取时间'
             ])
             ### 为确定新生成文件的情况，调试时增加了每列第一个数据，实际运行时候可以跳过
             self.policy_df.loc[0] = ['TestCol1', 'TestCol2', 'TestCol3', 'TestCol4', 'TestCol5', 'TestCol6']
@@ -290,7 +290,7 @@ smtp_server = 'smtp.163.com'  # Replace with your SMTP server
 smtp_port = 465  # Replace with your SMTP port (e.g., 587 for TLS, 465 for SSL)
 sender_email = 'gty_bot@163.com'  # Replace with your email address
 sender_password = 'FZR5B8GrpNhcDAyc'  ### 这里要用开启之后网易提供的授权码
-receiver_email = ['gty_bot@163.com','tygao12@outlook.com','aprilzyp@163.com']  # Replace with recipient's email address
+receiver_email = ['gty_bot@163.com','tygao12@outlook.com'] #,'aprilzyp@163.com']  # Replace with recipient's email address
 
 # Create the email content
 if YNPolicy == True:
