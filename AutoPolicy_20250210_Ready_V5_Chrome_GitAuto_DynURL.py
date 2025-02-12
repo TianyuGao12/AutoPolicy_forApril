@@ -110,7 +110,7 @@ class PolicyMonitor:
         # 配置监控的网站（可以根据需要添加）
         ### 加载监控网站列表
         self.monitoring_sites = self.load_monitoring_sites(os.path.join(script_dir,'Monitoring_Sites.txt'))
-        #print(f"{self.monitoring_sites}")
+        print(f"{self.monitoring_sites}")
         
         ### 手动写入列表部分，暂时注释掉
         """
