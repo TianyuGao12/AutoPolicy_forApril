@@ -1,6 +1,6 @@
 {
     "www.163.com": "strategies.NeteaseScraper",
     "www.qq.com": "strategies.TencentScraper",
-    "www.gov.cn": "strategies.WwwGovCnScraper"
+    "www.gov.cn": "strategies.WwwGovCnScraper",
     "app.mps.gov.cn":"strategies.MpsGovCnScraper"
 }
