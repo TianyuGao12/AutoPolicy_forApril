@@ -151,10 +151,10 @@ class PolicyMonitor:
             ### 将输出的警告信息改为写在日志里面
             logging.info(f"未找到已存在政策文件，已生成空白内容csv文件")
             self.policy_df = pd.DataFrame(columns=[
-                '政策名称', '发布机构','关键词', '发布时间', '主要内容', '政策链接', '抓取时间'
+                '政策名称', '发布机构', '发布时间', '主要内容', '政策链接', '抓取时间'
             ])
             ### 为确定新生成文件的情况，调试时增加了每列第一个数据，实际运行时候可以跳过
-            self.policy_df.loc[0] = ['TestCol1', 'TestCol2', 'TestCol3', 'TestCol4', 'TestCol5', 'TestCol6','TestCol7']
+            self.policy_df.loc[0] = ['TestCol1', 'TestCol2', 'TestCol3', 'TestCol4', 'TestCol5', 'TestCol6']
             self.save_data()
 
     def save_data(self):
@@ -180,7 +180,7 @@ class PolicyMonitor:
         #url = 'www.163.com/v/video/VIMSCM2RB.html?clickfrom=w_yw_wysl' #测试用，后面改成不是主函数的时候会注释掉
         #url = 'https://www.qq.com/' #测试2
         ## 测试3
-        url = 'https://www.gov.cn/search/zhengce/?t=zhengce&q=%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6&timetype=timeyy&mintime=&maxtime=&sort=score&sortType=1&searchfield=&pcodeJiguan=&childtype=&subchildtype=&tsbq=&pubtimeyear=&puborg=&pcodeYear=&pcodeNum=&filetype=&p=0&n=5&inpro=&sug_t=zhengce'
+        #url = 'https://www.gov.cn/search/zhengce/?t=zhengce&q=%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6&timetype=timeyy&mintime=&maxtime=&sort=score&sortType=1&searchfield=&pcodeJiguan=&childtype=&subchildtype=&tsbq=&pubtimeyear=&puborg=&pcodeYear=&pcodeNum=&filetype=&p=0&n=5&inpro=&sug_t=zhengce'
         if not urlparse(url).scheme:
             url = 'http://' + url
     
