@@ -1,6 +1,4 @@
 ### 2025.02.10 更新
 ### 格式用：网站-搜索词+英文逗号+网址，每个网站之间要回车换行，具体见下面例子
-### 中央政府网站-新能源汽车,https://www.gov.cn/search/zhengce/?t=zhengce&q=%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6&timetype=timeyy&mintime=&maxtime=&sort=score&sortType=1&searchfield=&pcodeJiguan=&childtype=&subchildtype=&tsbq=&pubtimeyear=&puborg=&pcodeYear=&pcodeNum=&filetype=&p=0&n=5&inpro=&sug_t=zhengce
 中央政府网站-新能源汽车,https://www.gov.cn/search/zhengce/?t=zhengce&q=%E6%96%B0%E8%83%BD%E6%BA%90%E6%B1%BD%E8%BD%A6&timetype=timeyy&mintime=&maxtime=&sort=score&sortType=1&searchfield=&pcodeJiguan=&childtype=&subchildtype=&tsbq=&pubtimeyear=&puborg=&pcodeYear=&pcodeNum=&filetype=&p=0&n=5&inpro=&sug_t=zhengce
 公安部网站-新能源汽车,https://app.mps.gov.cn/searchweb/search_new.jsp#
-
