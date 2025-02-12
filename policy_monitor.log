@@ -49,3 +49,10 @@
 2025-02-12 01:57:27,031 - INFO - 发现1条来自中央政府网站-新能源汽车的新政策
 2025-02-12 01:57:27,031 - INFO - 已从头添加 1 条新政策到 /home/runner/work/AutoPolicy_forApril/AutoPolicy_forApril/Policy_Data_New_2025-02-12_01-57.csv
 2025-02-12 01:57:30,809 - INFO - 成功发送邮件
+2025-02-12 08:22:42,914 - INFO - 未找到已存在政策文件，已生成空白内容csv文件
+2025-02-12 08:22:42,917 - INFO - 已创建csv更新文件: /home/runner/work/AutoPolicy_forApril/AutoPolicy_forApril/Policy_Data_New_2025-02-12_08-22.csv
+2025-02-12 08:22:42,918 - INFO - 开始政策监控...
+2025-02-12 08:22:42,918 - ERROR - 解析JSON文件时出错: Expecting ',' delimiter: line 5 column 5 (char 148)
+2025-02-12 08:22:42,918 - WARNING - 未找到对应网站解析方法: www.gov.cn
+2025-02-12 08:22:42,918 - INFO - 未发现新政策
+2025-02-12 08:22:47,488 - INFO - 成功发送邮件
