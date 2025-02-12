@@ -250,10 +250,12 @@ class PolicyMonitor:
             
         YNPolicy = False #默认情况为未发现
         for institution, url in self.monitoring_sites.items():
+            print(f"{institution}---{url}")
             #new_policies = self.fetch_policy(institution, url) #老版本的，参考上面注释掉的函数
             new_policies = self.web_fetch_data(institution, url) 
+            print(new_policies)
             ###### 注意是否是验证过没有重复的项目，前面不一定改成了一样的结构
-            
+            """
             if new_policies:
                 logging.info(f"发现{len(new_policies)}条来自{institution}的新政策")
                 # Append new policies to the CSV_new file
@@ -264,7 +266,7 @@ class PolicyMonitor:
                 logging.info(f"未发现新政策")
                 YNPolicy = False
             return YNPolicy
-            
+            """
 
 
 if __name__ == '__main__':
