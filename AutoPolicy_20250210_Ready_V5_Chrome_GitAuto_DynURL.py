@@ -139,7 +139,7 @@ class PolicyMonitor:
                             monitoring_sites[institution.strip()] = url.strip()
             except Exception as e:
                 logging.error(f"加载监控网站列表时出错: {e}")
-            return monitoring_sites
+        return monitoring_sites
 
     # 读取现有政策文件
     def load_existing_data(self):
