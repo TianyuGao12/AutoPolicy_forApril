@@ -32,3 +32,20 @@
 2025-02-11 09:14:51,760 - INFO - 来自中央政府网站-新能源汽车的政策获取正常
 2025-02-11 09:14:51,761 - INFO - 未发现新政策
 2025-02-11 09:14:55,560 - INFO - 成功发送邮件
+2025-02-12 01:57:20,737 - INFO - 已创建csv更新文件: /home/runner/work/AutoPolicy_forApril/AutoPolicy_forApril/Policy_Data_New_2025-02-12_01-57.csv
+2025-02-12 01:57:20,738 - INFO - 开始政策监控...
+2025-02-12 01:57:20,931 - INFO - ====== WebDriver manager ======
+2025-02-12 01:57:21,139 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-12 01:57:21,196 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-12 01:57:21,250 - INFO - There is no [linux64] chromedriver "132.0.6834.159" for browser google-chrome "132.0.6834" in cache
+2025-02-12 01:57:21,250 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-12 01:57:21,368 - INFO - WebDriver version 132.0.6834.159 selected
+2025-02-12 01:57:21,371 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/132.0.6834.159/linux64/chromedriver-linux64.zip
+2025-02-12 01:57:21,372 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/132.0.6834.159/linux64/chromedriver-linux64.zip
+2025-02-12 01:57:21,423 - INFO - Driver downloading response is 200
+2025-02-12 01:57:21,492 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-12 01:57:21,670 - INFO - Driver has been saved in cache [/home/runner/.wdm/drivers/chromedriver/linux64/132.0.6834.159]
+2025-02-12 01:57:27,026 - INFO - 来自中央政府网站-新能源汽车的政策获取正常
+2025-02-12 01:57:27,031 - INFO - 发现1条来自中央政府网站-新能源汽车的新政策
+2025-02-12 01:57:27,031 - INFO - 已从头添加 1 条新政策到 /home/runner/work/AutoPolicy_forApril/AutoPolicy_forApril/Policy_Data_New_2025-02-12_01-57.csv
+2025-02-12 01:57:30,809 - INFO - 成功发送邮件
