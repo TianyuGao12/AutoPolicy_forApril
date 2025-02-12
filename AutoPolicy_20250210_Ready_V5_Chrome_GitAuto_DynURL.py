@@ -253,6 +253,7 @@ class PolicyMonitor:
         YNPolicy = False #默认情况为未发现
         for institution, url in self.monitoring_sites.items():
             #new_policies = self.fetch_policy(institution, url) #老版本的，参考上面注释掉的函数
+            print(f"{institution}-{url}")
             new_policies = self.web_fetch_data(institution, url) 
             ###### 注意是否是验证过没有重复的项目，前面不一定改成了一样的结构
             
