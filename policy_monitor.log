@@ -1,1 +1,26 @@
 ###### 清理时间：2025.02.12
+2025-02-13 03:51:58,147 - INFO - 未找到已存在政策文件，已生成空白内容csv文件
+2025-02-13 03:51:58,150 - INFO - 已创建csv更新文件: /home/runner/work/AutoPolicy_forApril/AutoPolicy_forApril/Policy_Data_New_2025-02-13_03-51.csv
+2025-02-13 03:51:58,151 - INFO - 开始政策监控...
+2025-02-13 03:51:58,259 - INFO - ====== WebDriver manager ======
+2025-02-13 03:52:01,389 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-13 03:52:01,429 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-13 03:52:01,466 - INFO - There is no [linux64] chromedriver "133.0.6943.98" for browser google-chrome "133.0.6943" in cache
+2025-02-13 03:52:01,466 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-13 03:52:01,558 - INFO - WebDriver version 133.0.6943.98 selected
+2025-02-13 03:52:01,560 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/133.0.6943.98/linux64/chromedriver-linux64.zip
+2025-02-13 03:52:01,560 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/133.0.6943.98/linux64/chromedriver-linux64.zip
+2025-02-13 03:52:01,611 - INFO - Driver downloading response is 200
+2025-02-13 03:52:01,670 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-13 03:52:01,815 - INFO - Driver has been saved in cache [/home/runner/.wdm/drivers/chromedriver/linux64/133.0.6943.98]
+2025-02-13 03:54:07,929 - INFO - 来自公安部网站-新能源汽车的政策获取正常
+2025-02-13 03:54:07,940 - INFO - 发现10条来自公安部网站-新能源汽车的新政策
+2025-02-13 03:54:07,941 - INFO - 已从头添加 10 条新政策到 /home/runner/work/AutoPolicy_forApril/AutoPolicy_forApril/Policy_Data_New_2025-02-13_03-51.csv
+2025-02-13 03:54:07,941 - INFO - ====== WebDriver manager ======
+2025-02-13 03:54:08,051 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-13 03:54:08,087 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-13 03:54:08,121 - INFO - Driver [/home/runner/.wdm/drivers/chromedriver/linux64/133.0.6943.98/chromedriver-linux64/chromedriver] found in cache
+2025-02-13 03:54:13,491 - INFO - 来自中央政府网站-新能源汽车的政策获取正常
+2025-02-13 03:54:13,497 - INFO - 发现6条来自中央政府网站-新能源汽车的新政策
+2025-02-13 03:54:13,498 - INFO - 已从头添加 6 条新政策到 /home/runner/work/AutoPolicy_forApril/AutoPolicy_forApril/Policy_Data_New_2025-02-13_03-51.csv
+2025-02-13 03:54:17,870 - INFO - 成功发送邮件
