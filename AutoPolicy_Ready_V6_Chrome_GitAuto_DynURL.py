@@ -1,16 +1,11 @@
 ###V6_Ready Version
-
+receiver_email = ['gty_bot@163.com','tygao12@outlook.com','aprilzyp@163.com']  # Replace with recipient's email address
 
 #!/usr/bin/env python
 # coding: utf-8
 
-
-
 #!pip install requests beautifulsoup4 selenium webdriver_manager pandas
 ### 这个是下载notebook为py时候自动转换的，如果用GitHub的话要有个requirements.txt文件
-
-
-
 
 # 配置模拟浏览器 应该在strategies 里面解决了，只返回一个信息列表数据包
 """
@@ -37,7 +32,6 @@ driver.get("https://www.qq.com")
 print(driver.title)
 driver.quit()
 """
-
 
 # 其他import
 import csv
@@ -312,7 +306,9 @@ smtp_server = 'smtp.163.com'  # Replace with your SMTP server
 smtp_port = 465  # Replace with your SMTP port (e.g., 587 for TLS, 465 for SSL)
 sender_email = 'gty_bot@163.com'  # Replace with your email address
 sender_password = 'FZR5B8GrpNhcDAyc'  ### 这里要用开启之后网易提供的授权码
-receiver_email = ['gty_bot@163.com','tygao12@outlook.com','aprilzyp@163.com']  # Replace with recipient's email address
+
+###邮件地址最常用，直接放最前面了
+#receiver_email = ['gty_bot@163.com','tygao12@outlook.com','aprilzyp@163.com']  # Replace with recipient's email address
 
 # Create the email content
 if YNPolicy == True:
