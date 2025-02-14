@@ -284,6 +284,7 @@ class PolicyMonitor:
         return YNPolicy
 
 if __name__ == '__main__':
+    logging.info("******程序开始运行******")
     monitor = PolicyMonitor()
     YNPolicy = monitor.run()
     if YNPolicy == None:
