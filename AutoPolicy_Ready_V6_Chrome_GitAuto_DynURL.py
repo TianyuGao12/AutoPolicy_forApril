@@ -401,7 +401,7 @@ if ret:
 else:
     print(f"邮件发送失败 - {timestring}")
 
-
+logging.info(f"******程序运行结束******")
 
 
 
