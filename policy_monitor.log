@@ -68,3 +68,27 @@
 2025-02-14 01:58:03,279 - INFO - 来自中央政府网站-新能源汽车的政策获取正常
 2025-02-14 01:58:03,280 - INFO - 未发现新政策
 2025-02-14 01:58:07,503 - INFO - 成功发送邮件
+2025-02-15 01:54:40,412 - INFO - ******程序开始运行******
+2025-02-15 01:54:40,414 - INFO - 已创建csv更新文件: /home/runner/work/AutoPolicy_forApril/AutoPolicy_forApril/Policy_Data_New_2025-02-15_01-54.csv
+2025-02-15 01:54:40,415 - INFO - 开始政策监控...
+2025-02-15 01:54:40,521 - INFO - ====== WebDriver manager ======
+2025-02-15 01:54:40,727 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-15 01:54:40,838 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-15 01:54:40,899 - INFO - There is no [linux64] chromedriver "133.0.6943.98" for browser google-chrome "133.0.6943" in cache
+2025-02-15 01:54:40,900 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-15 01:54:41,036 - INFO - WebDriver version 133.0.6943.98 selected
+2025-02-15 01:54:41,038 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/133.0.6943.98/linux64/chromedriver-linux64.zip
+2025-02-15 01:54:41,038 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/133.0.6943.98/linux64/chromedriver-linux64.zip
+2025-02-15 01:54:41,106 - INFO - Driver downloading response is 200
+2025-02-15 01:54:41,202 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-15 01:54:41,365 - INFO - Driver has been saved in cache [/home/runner/.wdm/drivers/chromedriver/linux64/133.0.6943.98]
+2025-02-15 01:56:34,818 - INFO - 来自公安部网站-新能源汽车的政策获取正常
+2025-02-15 01:56:34,820 - INFO - 未发现新政策
+2025-02-15 01:56:34,820 - INFO - ====== WebDriver manager ======
+2025-02-15 01:56:34,929 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-15 01:56:34,983 - INFO - Get LATEST chromedriver version for google-chrome
+2025-02-15 01:56:35,038 - INFO - Driver [/home/runner/.wdm/drivers/chromedriver/linux64/133.0.6943.98/chromedriver-linux64/chromedriver] found in cache
+2025-02-15 01:56:40,520 - INFO - 来自中央政府网站-新能源汽车的政策获取正常
+2025-02-15 01:56:40,521 - INFO - 未发现新政策
+2025-02-15 01:56:44,604 - INFO - 成功发送邮件
+2025-02-15 01:56:44,604 - INFO - ******程序运行结束******
