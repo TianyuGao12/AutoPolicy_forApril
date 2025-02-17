@@ -1,5 +1,5 @@
 ###V6_Ready Version
-receiver_email = ['gty_bot@163.com','tygao12@outlook.com','aprilzyp@163.com']  # Replace with recipient's email address
+receiver_email = ['gty_bot@163.com','tygao12@outlook.com','aprilzyp@163.com','1063443104@qq.com']  # Replace with recipient's email address
 
 #!/usr/bin/env python
 # coding: utf-8
@@ -7,8 +7,7 @@ receiver_email = ['gty_bot@163.com','tygao12@outlook.com','aprilzyp@163.com']  #
 #!pip install requests beautifulsoup4 selenium webdriver_manager pandas
 ### 这个是下载notebook为py时候自动转换的，如果用GitHub的话要有个requirements.txt文件
 
-# 配置模拟浏览器 应该在strategies 里面解决了，只返回一个信息列表数据包
-"""
+# 配置模拟浏览器 应该在strategies 里面解决了，只返回一个信息列表数据包，不过可能还是需要调用，所以这里还是留一下
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
@@ -28,6 +27,7 @@ options.add_argument('--remote-debugging-port=9222')  # Add this line
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
 # 测试网站信息回馈
+"""
 driver.get("https://www.qq.com")
 print(driver.title)
 driver.quit()
