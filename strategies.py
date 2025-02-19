@@ -74,9 +74,8 @@ class NeteaseScraper(ScraperStrategy):
             
         data = driver.title
         
-        driver.stop_client()
-        driver.close()
         driver.quit()
+        time.sleep(30) # 建议留一些时间让chrome完全关闭
         
         return data
 #### 腾讯的测试版
@@ -92,9 +91,8 @@ class TencentScraper(ScraperStrategy):
             
         data = driver.title
         
-        driver.stop_client()
-        driver.close()
         driver.quit()
+        time.sleep(30) # 建议留一些时间让chrome完全关闭
         
         return data
         
@@ -147,9 +145,8 @@ class WwwGovCnScraper(ScraperStrategy):
             #    self._add_policy(policy) #函数内将单独条目写入原有总表文档并保存
             data.append(policy)
             
-        driver.stop_client()
-        driver.close()
         driver.quit()
+        time.sleep(30) # 建议留一些时间让chrome完全关闭
         
         return data
 
@@ -302,9 +299,8 @@ class MpsGovCnScraper(ScraperStrategy):
                 }
             data.append(policy)
 
-        driver.stop_client()
-        driver.close()
         driver.quit()
+        time.sleep(30) # 建议留一些时间让chrome完全关闭
         
         return data
 
