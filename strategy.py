@@ -5,3 +5,4 @@ class ScraperStrategy(ABC):
     @abstractmethod
     def scrape(self, url):
         pass
+
