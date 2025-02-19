@@ -63,7 +63,13 @@ class NeteaseScraper(ScraperStrategy):
     def scrape(self, institution, url):
         # Set up the Chrome driver with options
         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-        driver.get(url)
+        driver.set_page_load_timeout(600)  # 设置 10 分钟超时
+        
+        try:
+            driver.get(url)
+        except Exception as e:
+            print(f"页面加载超时: {e}")
+            
         data = driver.title
         
         driver.stop_client()
@@ -75,7 +81,13 @@ class NeteaseScraper(ScraperStrategy):
 class TencentScraper(ScraperStrategy):
     def scrape(self, institution, url):
         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-        driver.get(url)
+        driver.set_page_load_timeout(600)  # 设置 10 分钟超时
+        
+        try:
+            driver.get(url)
+        except Exception as e:
+            print(f"页面加载超时: {e}")
+            
         data = driver.title
         
         driver.stop_client()
@@ -89,7 +101,13 @@ class TencentScraper(ScraperStrategy):
 class WwwGovCnScraper(ScraperStrategy):
     def scrape(self, institution, url):
         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-        driver.get(url)
+
+        driver.set_page_load_timeout(600)  # 设置 10 分钟超时
+        
+        try:
+            driver.get(url)
+        except Exception as e:
+            print(f"页面加载超时: {e}")
 
         # Wait for the policy list to load
         WebDriverWait(driver, 60).until(
@@ -141,7 +159,13 @@ class MpsGovCnScraper(ScraperStrategy):
         institution_parts = institution.split('-') #把机构部分分成发布机构和关键词，对应后面0和1的选择
         
         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-        driver.get(url)
+        
+        driver.set_page_load_timeout(600)  # 设置 10 分钟超时
+        
+        try:
+            driver.get(url)
+        except Exception as e:
+            print(f"页面加载超时: {e}")
 
         #等待 15 秒以确保页面加载完成
         time.sleep(15)
