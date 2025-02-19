@@ -1,5 +1,5 @@
 ###V6_Ready Version
-receiver_email = ['gty_bot@163.com','tygao12@outlook.com','aprilzyp@163.com','1063443104@qq.com']  # Replace with recipient's email address
+receiver_email = ['gty_bot@163.com','tygao12@outlook.com']#,'aprilzyp@163.com','1063443104@qq.com']  # Replace with recipient's email address
 
 #!/usr/bin/env python
 # coding: utf-8
