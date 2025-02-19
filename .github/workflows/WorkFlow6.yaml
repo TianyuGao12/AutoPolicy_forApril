@@ -4,9 +4,9 @@ permissions:
 name: Run Python Script and Commit Changes
 
 on:
-  #push:
-    #branches:
-      #- main   ### 如果这个启动的话，只要有任何对main部分的影响改动就会造成运行
+  push:
+    branches:
+      - main   ### 如果这个启动的话，只要有任何对main部分的影响改动就会造成运行
   schedule:
     - cron: '30 0 * * *'  # Runs at 0:30 AM UTC
     - cron: '0 9 * * *' # Runs at 9:00 AM UTC
