@@ -41,4 +41,8 @@ repository/
 对应改正了主文件的一些算法，主要是适配了分别读多个网站的可能性
 ==END==
 
-
+2025.02.19 文件版本：AutoPolicy_Ready_V6.2_Chrome_GitAuto_DynURL.py （对应workflow已经更新）
+====
+为了添加同一网站多个关键词的搜索情况，增补了对应的monitoring_sites文件，对应解决了反复开关多个网页时Chrome和Selenium的版本适配和报错问题
+对应调整了主文件的一些细微浏览器设置
+==END==
