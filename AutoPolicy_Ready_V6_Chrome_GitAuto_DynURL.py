@@ -23,6 +23,8 @@ options.add_argument('--no-sandbox')  # Add this line
 options.add_argument('--disable-dev-shm-usage')  # Add this line
 options.add_argument('--remote-debugging-port=9222')  # Add this line
 options.add_argument("--remote-debugging-port=9230")
+options.add_argument("--disable-extensions")
+options.add_argument("--disable-gpu")
 
 # Set up the Chrome driver with options
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
