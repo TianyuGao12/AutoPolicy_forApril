@@ -31,7 +31,7 @@ jobs:
         with:
           chrome-version: 'latest'
           install-dependencies: true
-          install-chromedriver: true
+          #install-chromedriver: true ## taken over by Selenium version after 4.6.0
           
       - name: Install dependencies
         run: |
