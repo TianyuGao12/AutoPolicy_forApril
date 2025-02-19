@@ -25,7 +25,7 @@ from selenium.webdriver.common.alert import Alert
 
 # Set up Chrome options
 options = Options()
-#options.add_argument('--headless')
+options.add_argument('--headless=new')
 options.add_argument('--no-sandbox')  # Add this line
 options.add_argument('--disable-dev-shm-usage')  # Add this line
 options.add_argument('--remote-debugging-port=9222')  # Add this line
