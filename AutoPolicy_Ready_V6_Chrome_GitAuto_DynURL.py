@@ -1,5 +1,6 @@
-###V6_Ready Version
-receiver_email = ['gty_bot@163.com','tygao12@outlook.com']#,'aprilzyp@163.com','1063443104@qq.com']  # Replace with recipient's email address
+###V6.2_Ready Version
+#### 6.2版本改变了一些浏览器设定的小东西，从而适配同一网站多个关键词，反复开关网页等的可能性
+receiver_email = ['gty_bot@163.com','tygao12@outlook.com','aprilzyp@163.com','1063443104@qq.com']  # Replace with recipient's email address
 
 #!/usr/bin/env python
 # coding: utf-8
