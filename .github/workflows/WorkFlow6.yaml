@@ -39,7 +39,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Python script
-        run: python AutoPolicy_Ready_V6_Chrome_GitAuto_DynURL.py
+        run: python AutoPolicy_Ready_V6.2_Chrome_GitAuto_DynURL.py
 
       - name: Fetch and merge remote changes
         run: |
