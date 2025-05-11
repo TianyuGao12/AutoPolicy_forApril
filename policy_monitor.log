@@ -7747,3 +7747,80 @@
 2025-05-11 02:42:13,064 - INFO - 未发现新政策
 2025-05-11 02:42:17,827 - INFO - 成功发送邮件
 2025-05-11 02:42:17,828 - INFO - ******程序运行结束******
+2025-05-11 09:16:16,261 - INFO - ******程序开始运行******
+2025-05-11 09:16:16,263 - INFO - 已创建csv更新文件: /home/runner/work/AutoPolicy_forApril/AutoPolicy_forApril/Policy_Data_New_2025-05-11_09-16.csv
+2025-05-11 09:16:16,264 - INFO - 开始政策监控...
+2025-05-11 09:16:16,318 - INFO - ====== WebDriver manager ======
+2025-05-11 09:16:16,423 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-11 09:16:16,469 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-11 09:16:16,499 - INFO - Driver [/home/runner/.wdm/drivers/chromedriver/linux64/136.0.7103.92/chromedriver-linux64/chromedriver] found in cache
+2025-05-11 09:16:52,171 - INFO - 来自中央政府网站-新能源汽车的政策获取正常
+2025-05-11 09:16:52,173 - INFO - 未发现新政策
+2025-05-11 09:16:52,173 - INFO - ====== WebDriver manager ======
+2025-05-11 09:16:52,277 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-11 09:16:52,307 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-11 09:16:52,338 - INFO - Driver [/home/runner/.wdm/drivers/chromedriver/linux64/136.0.7103.92/chromedriver-linux64/chromedriver] found in cache
+2025-05-11 09:17:24,110 - INFO - 来自中央政府网站-动力电池的政策获取正常
+2025-05-11 09:17:24,111 - INFO - 未发现新政策
+2025-05-11 09:17:24,111 - INFO - ====== WebDriver manager ======
+2025-05-11 09:17:24,215 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-11 09:17:24,246 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-11 09:17:24,275 - INFO - Driver [/home/runner/.wdm/drivers/chromedriver/linux64/136.0.7103.92/chromedriver-linux64/chromedriver] found in cache
+2025-05-11 09:17:56,127 - INFO - 来自中央政府网站-动力蓄电池的政策获取正常
+2025-05-11 09:17:56,128 - INFO - 未发现新政策
+2025-05-11 09:17:56,128 - INFO - ====== WebDriver manager ======
+2025-05-11 09:17:56,232 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-11 09:17:56,262 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-11 09:17:56,292 - INFO - Driver [/home/runner/.wdm/drivers/chromedriver/linux64/136.0.7103.92/chromedriver-linux64/chromedriver] found in cache
+2025-05-11 09:18:28,312 - INFO - 来自中央政府网站-机动车维修的政策获取正常
+2025-05-11 09:18:28,314 - INFO - 未发现新政策
+2025-05-11 09:18:28,314 - INFO - ====== WebDriver manager ======
+2025-05-11 09:18:28,419 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-11 09:18:28,450 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-11 09:18:28,478 - INFO - Driver [/home/runner/.wdm/drivers/chromedriver/linux64/136.0.7103.92/chromedriver-linux64/chromedriver] found in cache
+2025-05-11 09:18:59,999 - INFO - 来自中央政府网站-新能源后市场的政策获取正常
+2025-05-11 09:19:00,000 - INFO - 未发现新政策
+2025-05-11 09:19:00,000 - INFO - ====== WebDriver manager ======
+2025-05-11 09:19:00,105 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-11 09:19:00,135 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-11 09:19:00,164 - INFO - Driver [/home/runner/.wdm/drivers/chromedriver/linux64/136.0.7103.92/chromedriver-linux64/chromedriver] found in cache
+2025-05-11 09:19:32,027 - INFO - 来自中央政府网站-电池回收的政策获取正常
+2025-05-11 09:19:32,028 - INFO - 未发现新政策
+2025-05-11 09:19:32,028 - INFO - ====== WebDriver manager ======
+2025-05-11 09:19:32,133 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-11 09:19:32,163 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-11 09:19:32,191 - INFO - Driver [/home/runner/.wdm/drivers/chromedriver/linux64/136.0.7103.92/chromedriver-linux64/chromedriver] found in cache
+2025-05-11 09:23:56,688 - INFO - 来自公安部网站-新能源汽车的政策获取正常
+2025-05-11 09:23:56,691 - INFO - 未发现新政策
+2025-05-11 09:23:56,691 - INFO - ====== WebDriver manager ======
+2025-05-11 09:23:56,795 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-11 09:23:56,826 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-11 09:23:56,856 - INFO - Driver [/home/runner/.wdm/drivers/chromedriver/linux64/136.0.7103.92/chromedriver-linux64/chromedriver] found in cache
+2025-05-11 09:26:13,550 - INFO - 来自公安部网站-动力蓄电池的政策获取正常
+2025-05-11 09:26:13,550 - INFO - 未发现新政策
+2025-05-11 09:26:13,551 - INFO - ====== WebDriver manager ======
+2025-05-11 09:26:13,656 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-11 09:26:13,686 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-11 09:26:13,714 - INFO - Driver [/home/runner/.wdm/drivers/chromedriver/linux64/136.0.7103.92/chromedriver-linux64/chromedriver] found in cache
+2025-05-11 09:28:30,627 - INFO - 来自公安部网站-动力电池的政策获取正常
+2025-05-11 09:28:30,629 - INFO - 未发现新政策
+2025-05-11 09:28:30,630 - INFO - ====== WebDriver manager ======
+2025-05-11 09:28:30,735 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-11 09:28:30,765 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-11 09:28:30,794 - INFO - Driver [/home/runner/.wdm/drivers/chromedriver/linux64/136.0.7103.92/chromedriver-linux64/chromedriver] found in cache
+2025-05-11 09:30:47,802 - INFO - 来自公安部网站-机动车维修的政策获取正常
+2025-05-11 09:30:47,805 - INFO - 未发现新政策
+2025-05-11 09:30:47,805 - INFO - ====== WebDriver manager ======
+2025-05-11 09:30:47,913 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-11 09:30:47,943 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-11 09:30:47,972 - INFO - Driver [/home/runner/.wdm/drivers/chromedriver/linux64/136.0.7103.92/chromedriver-linux64/chromedriver] found in cache
+2025-05-11 09:33:04,617 - WARNING - 来自公安部网站-新能源后市场的政策获取异常
+2025-05-11 09:33:04,617 - INFO - 未发现新政策
+2025-05-11 09:33:04,618 - INFO - ====== WebDriver manager ======
+2025-05-11 09:33:04,724 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-11 09:33:04,756 - INFO - Get LATEST chromedriver version for google-chrome
+2025-05-11 09:33:04,785 - INFO - Driver [/home/runner/.wdm/drivers/chromedriver/linux64/136.0.7103.92/chromedriver-linux64/chromedriver] found in cache
+2025-05-11 09:35:21,489 - INFO - 来自公安部网站-电池回收的政策获取正常
+2025-05-11 09:35:21,490 - INFO - 未发现新政策
+2025-05-11 09:35:26,299 - INFO - 成功发送邮件
+2025-05-11 09:35:26,299 - INFO - ******程序运行结束******
